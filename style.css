@@ -542,19 +542,24 @@ img {
   .aboutBanner__wrapper {
     flex-direction: column;
     text-align: justify;
+    align-items: center;
   }
   .abouBanner__img {
     margin: 5rem;
-  }
-  .aboutBanner__img small::before {
-    width: 30rem;
+    align-items: center;
+    justify-content: center;
   }
   .aboutBanner__img img {
     display: flex;
+    align-items: center;
     width: 10rem;
     max-width: 25rem;
     padding-top: 10rem;
   }
+  .aboutBanner__img small::before {
+    width: 30rem;
+  }
+  
 }
 
 /* SECOND */
@@ -845,21 +850,25 @@ input::placeholder {
     max-width: 50rem;
     flex-direction: column;
     gap: 4rem;
-
   }
 }
 /* MOBILE RESPONSIVE FOR CONTACT  */
 @media screen and (max-width: 768px) {
-  /* .contactUs {
-  
-  } */
+  .contactUs {
+    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+  }
   .contactUs__wrapper {
+    align-items: center;
     max-width: 50rem;
     flex-direction: column;
     gap: 4rem;
-
   }
-  .contactUs__info{
+  /* .form{
+    
+  } */
+  .contactUs__info {
     align-items: center;
   }
 }
