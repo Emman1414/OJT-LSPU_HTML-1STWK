@@ -559,7 +559,6 @@ img {
   .aboutBanner__img small::before {
     width: 30rem;
   }
-  
 }
 
 /* SECOND */
@@ -671,6 +670,7 @@ img {
 /* CATALOG INTERIOR */
 .catalogInterior {
   padding: 5rem 0;
+  margin: 5rem;
 }
 .catalogInterior__title h2 {
   font-size: var(--h2);
@@ -796,10 +796,25 @@ img {
   margin-bottom: 2rem;
 }
 .contactUs__wrapper {
-  display: flex;
-  padding: 5rem 0;
-  justify-content: space-between;
+  display: grid;
+  /* padding: 5rem 0;
+  justify-content: space-between; */
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
 }
+form {
+  width: 100%;
+}
+form input,
+form textarea {
+  width: 100%;
+  max-width: 100%;
+}
+form textarea {
+  margin-bottom: 2rem;
+}
+
 form input {
   display: flex;
   width: 100%;
@@ -839,6 +854,20 @@ input::placeholder {
 .contactUs__info h2 {
   font-size: var(--h2);
   font-weight: 700;
+}
+a.btn2 {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 1.5rem 0;
+  font-size: 1.6rem;
+  background-color: var(--clr--tertiary);
+  color: var(--clr-light);
+  text-decoration: none;
+}
+a.btn2 {
+  background-color: var(--clr--dark);
 }
 
 /* MOBILE RESPONSIVE FOR CONTACT  */
